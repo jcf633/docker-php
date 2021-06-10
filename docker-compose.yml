@@ -7,3 +7,16 @@ networks:
 
 #Build services
 services:
+  mysql:
+    build:
+      dockerfile: ./mysql/Dockerfile
+      context: .
+      args:
+        - MYSQL_VERSION=${ENV_MYSQL_VERSION}
+    container_name: mysql
+    volumes:
+      - ./mysql/db:/docker-entrypoint-initdb.d
+    ports:
+      - "3306:3306"
+    networks:
+      - dev-network
