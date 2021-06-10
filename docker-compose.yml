@@ -1,0 +1,9 @@
+version: '3'
+
+#Crinado a network
+networks:
+  dev-network:
+    driver: bridge
+
+#Build services
+services:
