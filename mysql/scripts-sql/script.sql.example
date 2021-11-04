@@ -1,0 +1,11 @@
+#CREATE DATABASE IF NOT EXISTS `default` COLLATE 'utf8_general_ci' ;
+#GRANT ALL ON `default`.* TO 'default'@'%';
+
+#USE default;
+
+#CREATE TABLE test (
+#    id int,
+#    name  varchar(255),
+#    phone varchar(255),
+#    email varchar(255)
+#);

@@ -1,7 +1,8 @@
+ARG MYSQL_VERSION=lastet
 FROM mysql:${MYSQL_VERSION}
 
 MAINTAINER Jean Fonseca
 
-COPY ./db/ /docker-entrypoint-initdb.d/
+COPY ./mysql/my.cnf /etc/mysql/conf.d/my.cnf
 
-EXPOSE 3306;
+EXPOSE 3306

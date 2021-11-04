@@ -1,0 +1,10 @@
+<VirtualHost *:80>
+    ServerName sample.test
+    DocumentRoot /var/www/sample/public/
+
+    <Directory "/var/www/sample/public/">
+        Options Indexes FollowSymLinks
+        AllowOverride All
+        Require all granted
+    </Directory>
+</VirtualHost>

@@ -1,0 +1,26 @@
+##### Pasta Projetos #####
+ENV_PATH_PROJECT=../html
+
+##### Pasta Bash #####
+ENV_PATH_CUSTON_BASH=../bash-env
+
+##### Pasta Logs #####
+ENV_PATH_LOGS=../logs
+
+##### Pasta Guardar Arquivos #####
+ENV_PATH_STORAGE=../data
+
+##### PHP #####
+ENV_PHP_VERSION=8.0
+
+##### Apache2 #####
+ENV_APACHE_PORT=80
+ENV_APACHE_SSL_PORT=443
+
+##### MySQL #####
+ENV_MYSQL_VERSION=5.7
+ENV_MYSQL_DATABASE=default
+ENV_MYSQL_USER=default
+ENV_MYSQL_PASSWORD=secret
+ENV_MYSQL_ROOT_PASSWORD="root"
+ENV_MYSQL_PORT=3306
