@@ -1,7 +1,7 @@
 ARG PHP_VERSION=lastet
 FROM php:${PHP_VERSION}-apache
 
-WORKDIR /var/www/
+WORKDIR /var/www/html
 
 COPY /php-apache/apache-config/vhost.conf /etc/apache2/sites-enabled/vhost.conf
 
